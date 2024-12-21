@@ -1,17 +1,49 @@
-research_task:
+trend_spotting_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Analyze current social media trends and viral content patterns related to {topic}.
+    Identify emerging discussions, controversies, and viral-worthy angles.
+    Consider audience engagement patterns and viral potential indicators.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A detailed analysis of 5-7 trending topics/angles related to {topic}, including:
+    - Current engagement metrics and growth trajectory
+    - Key audience demographics and interests
+    - Viral potential assessment
+    - Recommended content angles
+  agent: trend_spotter
 
-reporting_task:
+hook_creation_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Create 3-5 compelling hooks for each trending topic identified.
+    Focus on scroll-stopping first lines that grab attention instantly.
+    Ensure hooks are relatable and spark curiosity.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    For each trending topic:
+    - 3-5 unique hook variations
+    - Explanation of psychological triggers used
+    - Target audience resonance points
+  agent: hook_creator
+
+content_drafting_task:
+  description: >
+    Transform the trending topics and hooks into engaging, conversational content.
+    Break down complex aspects of {topic} into digestible chunks.
+    Maintain a natural, relatable tone throughout.
+  expected_output: >
+    For each topic:
+    - Full content draft (500-800 words)
+    - Key takeaways and learning points
+    - Suggested engagement prompts
+  agent: content_drafter
+
+final_editing_task:
+  description: >
+    Polish and optimize all content pieces for maximum impact.
+    Add appropriate emojis, formatting, and structure improvements.
+    Ensure content is visually appealing and easy to consume.
+  expected_output: >
+    Final versions of all content pieces with:
+    - Strategic emoji placement
+    - Optimized formatting and structure
+    - Enhanced visual appeal elements
+    - Platform-specific formatting recommendations
+  agent: final_editor

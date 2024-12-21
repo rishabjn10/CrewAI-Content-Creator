@@ -16,7 +16,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'topic': 'LLMs Agents and How They are Changing the Industries'
     }
     GrooviContent().crew().kickoff(inputs=inputs)
 
