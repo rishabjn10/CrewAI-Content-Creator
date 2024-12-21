@@ -1,0 +1,21 @@
+[project]
+name = "groovi_content"
+version = "0.1.0"
+description = "groovi-content using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai>=0.86.0",
+    "langtrace-python-sdk>=3.3.14"
+]
+
+[project.scripts]
+groovi_content = "groovi_content.main:run"
+run_crew = "groovi_content.main:run"
+train = "groovi_content.main:train"
+replay = "groovi_content.main:replay"
+test = "groovi_content.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
